@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2 class="weather-h2 mt-5"><i class="fas fa-cloud-showers-heavy"></i>Real-time Weather</h2>
+    <div class="pre-weather-continer">
+        <div class="weather-continer">
+        <div class="weather-continer-sub">
+            <input type="text" placeholder="Enter city name" id="city">
+            <div class="buttons">
+                <button id="search">Search</button>
+                <button id="detect">Detect Location</button>
+            </div>
+        </div>
+            <div id="loading" class="loading">Fetching weather data...</div>
+            <div class="weather-info">
+                <p id="placeholder">Enter a city or detect your location to see the weather <i class="fas fa-cloud-sun"></i></p>
+                <h2 id="cityName"></h2>
+                <p id="temp"></p>
+                <p id="description"></p>
+                <p id="humidity"></p>
+                <p id="wind"></p>
+                <p id="updateTime" class="update-time"></p>
+            </div>
+    </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

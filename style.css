@@ -1,0 +1,132 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(138, 218, 255);
+    max-height: 100vh;
+}
+.weather-h2{
+    text-align: center;
+}
+.weather-h2 i{
+    margin-right: 10px;
+    color: #135eb4;
+}
+.weather-continer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: beige;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 30px 50px 0 50px ;
+}
+.pre-weather-continer{
+    width: 600px;
+    display: flex;
+    justify-self: center;
+}
+.weather-continer-sub input{
+    border-radius: 10px;
+    border-width: 0.5px;
+    border-color: grey;
+    width: 400px;
+}
+.buttons{
+    display: flex;
+    /* flex-direction: column; */
+    
+}
+.buttons button{
+    width: 187px;
+    margin-top: 15px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    margin-bottom: 30px;
+}
+#search{
+    margin-right: 25px;
+    background-color: rgb(55, 170, 55);
+    transition: all 0.3s ease;
+}
+#search:hover{
+    transform: translateY(2px);
+    background-color: white;
+    color:rgb(55, 170, 55);
+    border: 1px solid;
+}
+#detect{
+    background-color: rgb(46, 96, 233);
+    transition: all 0.3s ease;
+}
+#detect:hover{
+    transform: translateY(2px);
+    background-color: white;
+    color:rgb(46, 96, 233);
+    border: 1px solid;
+}
+.loading{
+    display: none;
+    color:#555 ;
+    font-style: italic;
+    text-align: center;
+}
+.loading.active{
+    display: block;
+    animation: blink 1.5s infinite;
+}
+@keyframes blink{
+    0% {opacity: 0.3;}
+    50% {opacity: 1;}
+    100% {opacity: 0.3;}
+}
+
+#cityName{
+    text-align: center;
+}
+#placeholder{
+    font-size: 0.9rem;
+}
+#placeholder i{
+    color: #135eb4;
+}
+#wind{
+    display: none;
+}
+#humidity{
+    display: none;
+}
+#description{
+    display: none;
+}
+#temp{
+    display: none;
+}
+#cityName{
+    display: none;
+}
+.update-time {
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: 8px;
+}
+@media (max-width:767px){
+    .weather-continer-sub input{
+        width: 300px;
+
+    }
+    .pre-weather-continer{
+        max-width: 95%;
+    }
+    .weather-continer{
+        padding: 10px;
+    }
+    #search{
+        width: 132px;
+    }
+    #detect{
+        width: 132px;
+    }
+}
